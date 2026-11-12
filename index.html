@@ -1,41 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario con localStorage</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
+  <main>
+    <h1>Formulario de contacto</h1>
+    <p>Ejercicio para practicar cómo guardar datos en el navegador.</p>
     <form id="container-form">
-
-        <input type="text" name="dato" value=""> Nombre
-        <label class="answ1"></label>
-        <br>
-        <input type="text" name="dato" value="">
-        <label for="">email</label>
-        <br>
-        <input type="text" name="dato" value="">
-        <label for="">Mensaje</label>
-
-
-        <a
-            href="https://www.google.com/search?sca_esv=572509350&rlz=1C5CHFA_enES995ES995&sxsrf=AM9HkKnA2RjvYIgzu6Mg0_6CIK5jz2Ewhw:1697021193489&q=imagenes+de+miedo&tbm=isch&source=lnms&sa=X&ved=2ahUKEwih7qfL6O2BAxV5TaQEHZFsAGwQ0pQJegQIDBAB&biw=1309&bih=746&dpr=2.2#imgrc=ukRZU3kDfY3mmM"></a>
-
-
-
-        <div id="send">
-            <button id="button-send">Enviar</button>
-        </div>
-
+      <label for="nombre">Nombre</label>
+      <input id="nombre" name="nombre" type="text" required>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      <div id="send"><button id="button-send" type="submit">Guardar en este navegador</button></div>
+      <p id="resultado" role="status" aria-live="polite"></p>
     </form>
-
-    <script src="./script.js"></script>
-
+  </main>
+  <script src="./script.js"></script>
 </body>
-
 </html>
